@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using ProjectManager.Application.Common.Behaviours;
 using ProjectManager.Application.Common.Mappings;
 using System;
 using System.Collections.Generic;
@@ -13,10 +14,10 @@ namespace ProjectManager.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            //TODO: TEST CZY AUTOMAPPER ZADZIALA
-            services.AddAutoMapper(/*Assembly.GetExecutingAssembly(),*/ typeof(MappingProfile));
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
             return services;
         }
 
