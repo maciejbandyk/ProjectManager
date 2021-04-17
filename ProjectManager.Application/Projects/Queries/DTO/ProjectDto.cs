@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjectManager.Application.Projects.DTO
+namespace ProjectManager.Application.Projects.Queries.DTO
 {
     public class ProjectDto
     {

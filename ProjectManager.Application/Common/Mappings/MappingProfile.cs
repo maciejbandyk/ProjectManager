@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ProjectManager.Application.Projects.DTO;
+using ProjectManager.Application.Projects.Queries.DTO;
 using ProjectManager.Domain.Entities;
 using System;
 using System.Collections.Generic;

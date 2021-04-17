@@ -2,7 +2,7 @@
 using ProjectManager.Application.Projects.Commands.CreateProject;
 using ProjectManager.Application.Projects.Commands.DeleteProject;
 using ProjectManager.Application.Projects.Commands.UpdateProject;
-using ProjectManager.Application.Projects.DTO;
+using ProjectManager.Application.Projects.Queries.DTO;
 using ProjectManager.Application.Projects.Queries.GetProject;
 using ProjectManager.Application.Projects.Queries.GetProjects;
 using System;

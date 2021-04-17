@@ -3,7 +3,7 @@ using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectManager.Application.Common.Interfaces;
-using ProjectManager.Application.Projects.DTO;
+using ProjectManager.Application.Projects.Queries.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
