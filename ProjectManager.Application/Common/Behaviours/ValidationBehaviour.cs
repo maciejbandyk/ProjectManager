@@ -29,7 +29,7 @@ namespace ProjectManager.Application.Common.Behaviours
                 var fail = validationResults.SelectMany(p => p.Errors).Where(p => p != null).ToList();
 
                 if (fail.Count != 0)
-                    throw new ValidationException(fail);
+                    throw new Exceptions.ValidationException(fail);
             }
             return await next();
         }
